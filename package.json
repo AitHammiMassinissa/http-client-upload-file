@@ -1,0 +1,31 @@
+{
+  "name": "example-http-client-upload-file",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Upload file to IPFS via browser using js-ipfs-http-client",
+  "license": "MIT",
+  "author": "Massinissa Ait Hammi <massinissaait2018@gmail.com>",
+  "scripts": {
+    "clean": "rimraf ./dist ./.cache ./node_modules/.vite",
+    "build": "vite build",
+    "serve": "vite dev --port 8888",
+    "start": "npm run serve",
+    "test": "npm run build && playwright test tests"
+  },
+  "dependencies": {
+    "ipfs-http-client": "^57.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@playwright/test": "^1.12.3",
+    "ipfs": "^0.63.3",
+    "playwright": "^1.12.3",
+    "process": "^0.11.10",
+    "rimraf": "^3.0.2",
+    "util": "^0.12.4",
+    "vite": "^3.0.0-beta.1"
+  }
+}
